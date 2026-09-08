@@ -1,0 +1,7 @@
+<html>
+<head>
+<title> SIMPLE WEBSITE </title>
+<body>
+<h1> RANDOM WEBSITE <h1>
+<p> This is a simple basic website created for x purpose </p>
+</head>

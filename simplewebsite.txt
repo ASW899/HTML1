@@ -1,0 +1,17 @@
+<html>
+<head> 
+<title> SIMPLE WEBSITE </title>
+</head>
+<body>
+<h1 align="center"> RANDOM WEBSITE <h1>
+<p> This is a simple basic website created for x purpose </p>
+<! COMMENT>
+<b> bold text </b>
+<i> italic text </i>
+<u> underlined text </u>
+<mark> highlighted text </mark>
+<br>
+<hr>
+<a href="https://www.google.com> Google </a>
+</body>
+<html>

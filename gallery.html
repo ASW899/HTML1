@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> GALLERY </title>
+    <style>
+        /* Base styles to smooth out rendering */
+        body {
+            background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%);
+            margin: 0;
+            padding: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            height: 100vh;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        
+        /* Modernized Link Hover Mechanics */
+        .nav-link {
+            color: #e0e7ff;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 8px 12px;
+            border-radius: 6px;
+            background: rgba(255, 255, 255, 0.05);
+            transition: all 0.25s ease;
+            border-left: 3px solid transparent;
+        }
+        .nav-link:hover {
+            color: #ffffff;
+            background: rgba(255, 255, 255, 0.15);
+            border-left: 3px solid #38bdf8;
+            padding-left: 16px;
+        }
+
+        /* Clean Interactive Dashboard Button Styling */
+        .btn-action {
+            display: inline-block;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            border-radius: 6px;
+            margin: 4px;
+            font-weight: 600;
+            transition: all 0.2s ease;
+        }
+        .btn-action.primary {
+            background: #38bdf8;
+            color: #0f172a;
+        }
+        .btn-action.primary:hover {
+            background: #0ea5e9;
+            transform: translateY(-1px);
+        }
+        .btn-action.secondary {
+            background: rgba(255, 255, 255, 0.15);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(4px);
+        }
+        .btn-action.secondary:hover {
+            background: rgba(255, 255, 255, 0.25);
+            transform: translateY(-1px);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- MODERNIZED PREMIUM DASHBOARD BOX -->
+    <section style="display: flex; flex-direction: column; max-width: 1350px; height: calc(100vh - 40px); margin: 0 auto; padding: 30px; background: linear-gradient(145deg, #31108f 0%, #1e0b5c 100%); color: white; border-radius: 20px; box-sizing: border-box; overflow: hidden; box-shadow: 0 20px 40px rgba(15, 23, 42, 0.3);">
+        
+        <!-- HEADER ELEMENT -->
+        <div style="text-align: center; margin-bottom: 25px;">
+            <h1 style="margin: 0 0 6px 0; font-size: 28px; font-weight: 800; letter-spacing: 0.5px; color: #ffffff; text-shadow: 0 2px 4px rgba(0,0,0,0.2);">MCET GALLERY</h1>
+            <h2 style="margin: 0; font-size: 16px; font-weight: 400; color: #38bdf8; letter-spacing: 1px; text-transform: uppercase;">MOHANDAS COLLEGE OF ENGINEERING AND TECHNOLOGY</h2>
+        </div>
+        
+        <!-- TWO COLUMN SPLIT LAYOUT -->
+        <div style="display: flex; flex: 1; gap: 35px; min-height: 0; margin-bottom: 20px;">
+            
+            <!-- LEFT COLUMN: NAVIGATION CONTENT AREA -->
+            <div style="flex: 1; display: flex; flex-direction: column; justify-content: space-between; min-height: 0;">
+                
+                <!-- LINK STACK -->
+                <nav class="mohandas-nav" style="display: flex; flex-direction: column; gap: 10px;">
+                    <a href="collegewebsite3.html" class="nav-link">Home</a>
+                    <a href="association.html" class="nav-link">MCA Association details</a>
+                    <a href="hodprofile.html" class="nav-link">Hod profile</a>
+                    <a href="facultydetails.html" class="nav-link">Faculty Details</a>
+                    <a href="about.html" class="nav-link">About the Department</a>
+                </nav>
+
+                <!-- BOTTOM LEFT SECTION: IMAGE GALLERY GRID PANEL (FILLING EMPTY SPACE) -->
+                <div style="display: flex; flex-direction: column; gap: 12px; background: rgba(15, 23, 42, 0.4); padding: 20px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.06); height: 100%; margin-top: 20px; justify-content: flex-start; overflow-y: auto;">
+                    <div class="dept-section" style="display: flex; flex-direction: column; gap: 8px;">
+                        <h3 style="margin: 0 0 5px 0; font-size: 14px; font-weight: 600; color: #38bdf8; text-transform: uppercase; letter-spacing: 0.5px;">Campus Media</h3>
+                        
+                        <!-- GRID FOR PREVIEW IMAGES -->
+                        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;">
+                            <!-- Image Card 1: Reuses main campus snapshot -->
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQnxGlfgET8ltHXtS61kbIDY-tQZne7NQiEjlv4oDB1MNCG1Lr9DQFc8A9&s=10" alt="Campus Grid 1" style="width: 100%; height: 350px; object-fit: cover; border-radius: 6px; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+                            
+                            <!-- Image Card 2: Reuses secondary layout background -->
+                            <img src="https://mcet.ac.in/wp-content/uploads/2024/04/colloquium-4.jpg" alt="Campus Grid 2" style="width: 100%; height: 350px; object-fit: cover; border-radius: 6px; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+                            
+                            <!-- Image Card 3: Reuses btech thumb graphic references -->
+                            <img src="https://mcet.ac.in/wp-content/uploads/2024/03/arts-1.jpg" alt="Campus Grid 3" style="width: 100%; height: 350px; object-fit: cover; border-radius: 6px; border: 1px solid rgba(255,255,255,0.1); box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+                        </div>
+                        <p style="margin: 8px 0 0 0; font-size: 12px; opacity: 0.7; text-align: center; font-style: italic;">Visual highlights from labs, workshops, and student event blocks.</p>
+                    </div>
+                </div>
+
+            </div>
+            
+            <!-- RIGHT COLUMN: HERO BANNER IMAGE INTERFACE -->
+            <header class="hero-banner" style="flex: 1.2; position: relative; border-radius: 16px; overflow: hidden; height: 100%; box-shadow: 0 12px 24px rgba(0,0,0,0.4); border: 1px solid rgba(255,255,255,0.1);"> 
+                <!-- Background Large Media Focus Showcase -->
+                <img src="https://www.targetadmission.com/storage/img/colleges/newc/7285-468047.webp" alt="Mohandas Campus Infrastructure Panorama" class="hero-image" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0;"> 
+                
+                <div class="hero-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to bottom, rgba(15, 23, 42, 0.2) 0%, rgba(15, 23, 42, 0.75) 100%); display: flex; align-items: flex-end; box-sizing: border-box; padding: 35px;"> 
+                    <div class="hero-content" style="color: white; text-align: left; max-width: 100%;"> 
+                        <span class="hero-tag" style="display: inline-block; font-size: 10px; text-transform: uppercase; font-weight: 700; letter-spacing: 1px; margin-bottom: 12px; background: #f59e0b; color: #0f172a; padding: 4px 8px; border-radius: 4px; box-shadow: 0 2px 4px rgba(0,0,0,0.2);">Campus Showcase</span> 
+                        <h1 style="font-size: 2rem; margin: 0 0 10px 0; font-weight: 800; line-height: 1.2; text-shadow: 0 2px 4px rgba(0,0,0,0.6);">Life at Mohandas College</h1> 
+                        <p style="font-size: 0.95rem; line-height: 1.5; margin-bottom: 22px; opacity: 0.9; text-shadow: 0 1px 3px rgba(0,0,0,0.6);">Take a glance at our state-of-the-art computer labs, seminar halls, and vibrant engineering campus life activities.</p> 
+                        <div class="hero-buttons" style="margin-left: -4px;"> 
+                            <a href="collegewebsite3.html" class="btn-action primary">Go to Home</a> 
+                            <a href="association.html" class="btn-action secondary">Association Details</a> 
+                        </div> 
+                    </div> 
+                </div>
+            </header>
+
+        </div>
+
+        <!-- FOOTER BLOCK -->
+        <footer class="college-footer" style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 12px; font-size: 11px; text-align: center; color: rgba(255,255,255,0.6);"> 
+            <p style="margin: 0 0 2px 0;">&copy; 2026 Mohandas College of Engineering and Technology. All Rights Reserved.</p> 
+            <p class="footer-sub" style="margin: 0; color: #38bdf8;">TVM, Kerala, India</p>
+        </footer>
+
+    </section>
+</body>
+</html>
