@@ -1,0 +1,20 @@
+<html>
+<head>
+<title> JS 1 </title>
+<script>
+function Sum(){
+let a=parseInt(document.getElementById("txtbox1").value);
+let b=parseInt(document.getElementById("txtbox2").value);
+let c=a+b;
+document.getElementById("result2").innerHTML = "result: " + c;
+}
+</script>
+</head>
+<body>
+A:<input type="text" id="txtbox1" placeholder="enter the first number" >
+<br>
+B:<input type="text" id="txtbox2" placeholder="enter the second number">
+<button id="submitBtn" onClick="Sum()"> SUBMIT </button>
+<p id="result2"></p>
+</body>
+</html>

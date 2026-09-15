@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-<link rel="stylesheet" href="clg.css">
+    <link rel="stylesheet" href="clg.css">
     <title> MOHANDAS COLLEGE OF ENGINEERING AND TECHNOLOGY </title>
     <style>
         /* Base styles to smooth out rendering */
@@ -44,13 +44,15 @@
             margin: 4px;
             font-weight: 600;
             transition: all 0.2s ease;
+            border: none;
+            cursor: pointer;
         }
         .btn-action.primary {
-            background: #38bdf8;
-            color: #0f172a;
+            background: #ef4444;
+            color: #ffffff;
         }
         .btn-action.primary:hover {
-            background: #0ea5e9;
+            background: #dc2626;
             transform: translateY(-1px);
         }
         .btn-action.secondary {
@@ -91,11 +93,11 @@
                     <a href="gallery.html" class="nav-link">Gallery</a>
                     
                     <div style="margin-top: 12px; display: flex; align-items: center; justify-content: flex-start;">
-                        <img src="https://mcet.ac.in/wp-content/uploads/2024/05/mcet-aerial-700x600.jpg" alt="College Campus Building" class="college-image" style="width: 570px; height: 250px; object-fit: cover; border-radius: 8px; box-shadow: 0 8px 16px rgba(0,0,0,0.4); border: 2px solid rgba(255,255,255,0.1);">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgTV2hufPf8-DC1Ft70t7afEUYUYcHQ8RNE6Lvj86xjft1pyMvaT0_hO90&s=10" alt="College Campus Building" class="college-image" style="width: 570px; height: 250px; object-fit: cover; border-radius: 8px; box-shadow: 0 8px 16px rgba(0,0,0,0.4); border: 2px solid rgba(255,255,255,0.1);">
                     </div>
                 </nav>
 
-                <!-- BOTTOM LEFT SECTION: DEPARTMENTS & ANNOUNCEMENTS (FILLING EMPTY SPACE) -->
+                <!-- BOTTOM LEFT SECTION: DEPARTMENTS & ANNOUNCEMENTS -->
                 <div style="display: flex; flex-direction: column; gap: 15px; background: rgba(15, 23, 42, 0.4); padding: 20px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.06);">
                     
                     <!-- QUICK STATS BAR -->
@@ -111,7 +113,7 @@
                         <h3 style="margin: 0 0 10px 0; font-size: 14px; font-weight: 600; color: #38bdf8; text-transform: uppercase; letter-spacing: 0.5px;">Academic Departments</h3>
                         <div class="grid-container" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; font-size: 11px;">
                             <div class="dept-card" style="background: rgba(255,255,255,0.03); padding: 10px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.05);">
-                                <strong style="color: white; font-size: 12px; display: block; margin-bottom: 2px;">💻 CS & BCA MCA</strong>
+                                <strong style="color: white; font-size: 12px; display: block; margin-bottom: 2px;">💻 CS & MCA</strong>
                                 <span style="opacity: 0.7; line-height: 1.3;">Programming, cloud architecture.</span>
                             </div>
                             <div class="dept-card" style="background: rgba(255,255,255,0.03); padding: 10px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.05);">
@@ -128,23 +130,34 @@
                     <!-- LATEST EVENTS BOX -->
                     <section class="events-section" style="display: flex; justify-content: space-between; align-items: center; font-size: 12px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 12px;">
                         <div class="events-box" style="max-width: 70%;">
-                            <span style="font-weight: 600; color: #f59e0b; margin-right: 5px; text-transform: uppercase; font-size: 11px;">Latest Notice:</span>
-                            <span style="opacity: 0.9;">MCA Association Details & Admissions layout published.</span>
+                            <span style="font-weight: 600; color: #ef4444; margin-right: 8px;">📢 Alert:</span>
+                            <span style="opacity: 0.8;">Online admission desk is currently closed.</span>
                         </div>
-                        <div class="cta-box">
-                            <a href="applyonline.html" class="btn-action primary" style="padding: 6px 12px; font-size: 11px; margin: 0;">Apply Online</a>
+                        <div style="font-weight: 500; font-size: 11px; padding: 2px 8px; background: rgba(239,68,68,0.2); color: #f87171; border-radius: 4px;">
+                            Closed
                         </div>
                     </section>
                 </div>
-
             </div>
-            
-            <!-- RIGHT COLUMN: HERO BANNER IMAGE INTERFACE -->
-            <header class="hero-banner" style="flex: 1.2; position: relative; border-radius: 16px; overflow: hidden; height: 100%; box-shadow: 0 12px 24px rgba(0,0,0,0.4); border: 1px solid rgba(255,255,255,0.1);"> 
-                <img src="https://mcet.ac.in/wp-content/uploads/2024/05/about2.jpg" alt="Mohandas College Campus" class="hero-image" style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0;"> 
+
+            <!-- RIGHT COLUMN: ADMISSION CLOSED / CONTACT NOTICE AREA -->
+            <div style="flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; background: rgba(15, 23, 42, 0.35); padding: 40px; border-radius: 16px; border: 1px solid rgba(255,255,255,0.08); text-align: center; min-height: 0;">
                 
-                <div class="hero-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(to bottom, rgba(15, 23, 42, 0.2) 0%, rgba(15, 23, 42, 0.75) 100%); display: flex; align-items: flex-end; box-sizing: border-box; padding: 35px;"> 
-                    <div class="hero-content" style="color: white; text-align: left; max-width: 100%;"> 
-                        <span class="hero-tag" style="display: inline-block; font-size: 10px; text-transform: uppercase; font-weight: 700; letter-spacing: 1px; margin-bottom: 12px; background: #f59e0b; color: #0f172a; padding: 4px 8px; border-radius: 4px; box-shadow: 0 2px 4px rgba(0,0,0,0.2);">Welcome to TVM's Premier Institute</span>
- <h3 style="margin: 0 0 10px 0; font-size: 14px; font-weight: 600; color: #38bdf7; text-transform: uppercase; letter-spacing: 0.5px;">MOHANDAS COLLEGE OF ENGINEERING AND TECHNOLOGY</h3>
- <h3 style="margin: 0 0 10px 0; font-size: 14px; font-weight: 600; color: #38bdf7; text-transform: uppercase; letter-spacing: 0.5px;">ANAD, THIRUVANANTHAPURAM, 695015</h3> 
+                <div style="font-size: 64px; margin-bottom: 15px;">🛑</div>
+                
+                <h3 style="margin: 0 0 10px 0; font-size: 26px; font-weight: 800; color: #f87171; letter-spacing: 0.5px;">
+                    ONLINE ADMISSIONS CLOSED
+                </h3>
+                
+                <p style="margin: 0 0 30px 0; font-size: 15px; color: #e2e8f0; line-height: 1.6; max-width: 420px; opacity: 0.9;">
+                    The online registration portal for the current academic cycle has concluded. No more online application submissions are being accepted at this time.
+                </p>
+                
+                <div style="width: 100%; max-width: 440px; background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.08); padding: 20px; border-radius: 12px; box-sizing: border-box;">
+                    <h4 style="margin: 0 0 12px 0; font-size: 14px; font-weight: 700; color: #38bdf8; text-transform: uppercase; letter-spacing: 1px;">
+                        Need Help or Late Intakes? </h4>
+<h5> CONTACT : +91 12345678 </h5>
+<h5> email : mcetonline@gmail.com </h5>
+
+
+
