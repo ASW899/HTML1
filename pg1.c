@@ -16,7 +16,7 @@ printf("Enter the elements of second array: ");
 for (j = 0; j < n; j++) 
 { scanf("%d", &arr2[j]); } 
 i = 0; j = 0; 
-//Merge two sorted arrays 
+ 
 while (i < m && j < n) 
 { if (arr1[i] < arr2[j]) 
 { arr3[k] = arr1[i]; 
@@ -25,10 +25,10 @@ else
 { arr3[k] = arr2[j];
  j++; } 
  k++; } 
- //Copy remaining elements of arr1 
+
  while (i < m) 
  { arr3[k] = arr1[i]; i++; k++; } 
- // Copy remaining elements of arr2 
+  
  while (j < n) 
  { arr3[k] = arr2[j]; j++; 
  k++; } 

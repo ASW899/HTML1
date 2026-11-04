@@ -4,7 +4,7 @@
 int queue[50];
 int front = -1;
 int rear = -1;
-int size; // Declaration of global variable 'size'
+int size; 
 
 void enqueue()
 {
@@ -12,7 +12,7 @@ void enqueue()
     printf("Enter the element to be enqueued: ");
     scanf("%d", &ele);
     
-    // Check for overflow first in a circular queue
+    
     if((rear + 1) % size == front)
     {
         printf("Overflow\n");

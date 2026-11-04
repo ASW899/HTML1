@@ -18,7 +18,6 @@ void display()
         printf("%d -> ", temp->data);
         temp = temp->next;
     }
-
     printf("NULL\n");
 }
 
@@ -132,6 +131,37 @@ void deletenode()
     }
 }
 
+void search()
+{
+    if (head == NULL)
+    {
+        printf("The list is empty. Nothing to search.\n");
+        return;
+    }
+
+    int ele, pos = 1, found = 0;
+    printf("Enter the element to be searched: ");
+    scanf("%d", &ele);
+    
+    struct node *temp = head;
+    while (temp != NULL)
+    {
+        if (temp->data == ele)
+        {
+            printf("Element %d found at position %d!\n", ele, pos);
+            found = 1;
+            break; 
+        }
+        temp = temp->next;
+        pos++;
+    }
+    
+    if (!found)
+    {
+        printf("Element %d not found in the list.\n", ele);
+    }
+}
+
 int main()
 {
     int choice;
@@ -144,7 +174,8 @@ int main()
         printf("3. Add In Between\n");
         printf("4. Delete Node\n");
         printf("5. Display\n");
-        printf("6. Exit\n");
+        printf("6. Search Element\n");
+        printf("7. Exit\n");
         printf("Enter your choice: ");
         scanf("%d", &choice);
 
@@ -166,6 +197,9 @@ int main()
                 display();
                 break;
             case 6:
+                search();
+                break;
+            case 7:
                 exit(0);
             default:
                 printf("Invalid choice! Please try again.\n");
@@ -174,3 +208,4 @@ int main()
 
     return 0;
 }
+

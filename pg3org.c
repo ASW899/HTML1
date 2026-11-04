@@ -136,19 +136,19 @@ void deletenode()
         return;
     }
 
-    // If deleting the head node
+    
     if (temp == head)
     {
         head = head->next;
     }
 
-    // Update next node's prev pointer
+    
     if (temp->next != NULL)
     {
         temp->next->prev = temp->prev;
     }
 
-    // Update prev node's next pointer
+    
     if (temp->prev != NULL)
     {
         temp->prev->next = temp->next;
