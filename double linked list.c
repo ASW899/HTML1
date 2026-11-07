@@ -161,7 +161,7 @@ void deletenode()
 void search()
 {
 	int ele,pos=1,found=0;
-	printf("enter the element to be searched");
+	printf("enter the element to be searched: ");
 	scanf("%d",&ele);
 	if(head==NULL)
 	{
