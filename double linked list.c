@@ -158,45 +158,76 @@ void deletenode()
     free(temp);
 }
 
+void search()
+{
+	int ele,pos=1,found=0;
+	printf("enter the element to be searched");
+	scanf("%d",&ele);
+	if(head==NULL)
+	{
+		printf("empty list");
+	}
+	struct node *temp=head;
+	while(temp!=NULL)
+	{
+		if(temp->data==ele)
+		{
+			printf("%d element found at position %d",ele,pos);
+			found=1;
+			break;
+		}
+		temp=temp->next;
+		pos=pos+1;
+	}
+	if(found==0)
+	{
+		printf(" %d element not found in the list! ",ele);
+		
+	}
+}
 int main()
 {
-    int choice;
-
-    while (1)
-    {
-        printf("\n--- Doubly Linked List Menu ---\n");
+	int choice;
+	while(1)
+	{
+		printf("\n--- Doubly Linked List Menu ---\n");
         printf("1. Add at Beginning\n");
         printf("2. Add at End\n");
         printf("3. Add In Between\n");
         printf("4. Delete Node\n");
         printf("5. Display\n");
-        printf("6. Exit\n");
+        printf("6. Search\n");
+        printf("7. Exit\n");
         printf("Enter your choice: ");
         scanf("%d", &choice);
-
-        switch (choice)
+        switch(choice)
         {
-            case 1:
-                addatbeg();
-                break;
-            case 2:
-                addatend();
-                break;
-            case 3:
-                addinbetween();
-                break;
-            case 4:
-                deletenode();
-                break;
-            case 5:
-                display();
-                break;
-            case 6:
-                exit(0);
-            default:
-                printf("Invalid choice! Please try again.\n");
-        }
-    }
+        	case 1:
+        		addatbeg();
+        		break;
+        	case 2:
+        		addatend();
+        		break;
+        	case 3:
+        		addinbetween();
+        		break;
+        	case 4:
+        		deletenode();
+        		break;
+        	case 5:
+        		display();
+        		break;
+        	case 6:
+        		search();
+        		break;
+        	case 7:
+        		exit(0);
+        	default:
+        		printf("INVALID CHOICE!");
+		}
+	}
+	
+}
 
     return 0;
 }
